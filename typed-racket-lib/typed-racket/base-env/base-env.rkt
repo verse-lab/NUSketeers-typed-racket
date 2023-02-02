@@ -85,6 +85,7 @@
 [false? (unsafe-shallow:make-pred-ty (-val #f))]
 [xor (-> Univ Univ Univ)]
 
+
 ;; Section 4.3 (Numbers)
 ;; These are mostly defined in base-env-numeric.rkt
 
@@ -3676,3 +3677,6 @@
 [prop:print-converter (-struct-property (-> -Self (-> Univ Univ) Univ)
                                         #'print-converter?)]
 [prop:print-convert-constructor-name (-struct-property -Symbol #f)]
+
+;; Fuzz: fuzzing bindings
+[fuzz:store-macro-binding (-> Sym -Void)]
