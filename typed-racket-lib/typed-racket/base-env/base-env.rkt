@@ -3679,4 +3679,4 @@
 [prop:print-convert-constructor-name (-struct-property -Symbol #f)]
 
 ;; Fuzz: fuzzing bindings
-[fuzz:store-macro-binding (-> -Variable-Reference Sym -Void)]
+[fuzz:internal-store-macro-binding (-> -Variable-Reference -Symbol -Sexp -Void)]
