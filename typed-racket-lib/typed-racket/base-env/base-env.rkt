@@ -3677,6 +3677,3 @@
 [prop:print-converter (-struct-property (-> -Self (-> Univ Univ) Univ)
                                         #'print-converter?)]
 [prop:print-convert-constructor-name (-struct-property -Symbol #f)]
-
-;; Fuzz: fuzzing bindings
-[fuzz:internal-store-macro-binding (-> -Variable-Reference -Symbol -Sexp -Void)]
